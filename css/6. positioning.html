@@ -1,0 +1,70 @@
+<html>
+    <head><title>
+        Webpage with </title>
+   <Style type="text/css">
+        .first {
+            font-size:200%;
+            background-color:rgb(182, 194, 175);
+            position:absolute;
+            left:100px;
+            width:35%;
+            top:250px;
+            z-index: 1;
+
+        }
+        .second{
+            background-color:yellow;
+            font-size:15px;
+            position:absolute;
+            left:100px;
+            top:15px;
+            width:35%;
+            z-index: 2;
+            opacity: 10;
+        }
+                #uu{
+            text-decoration:underline;
+        }
+        #z, #y{
+            position:relative;
+            top:250px;
+            left:140px;
+        }
+
+    </style>
+    </head>
+<body>
+    
+         <p class="first">This is absolute positioning with the first paragraph. The left and top margins are positioned.</p>
+        <div class="second">
+         <P>This is absolute positioning with the second paragraph. The left and top margins are positioned.</P>
+    
+         <H1><span id="uu">The second paragraph here is actually above the first paragraph.</span> </H1></div>
+         
+
+          <p class="z">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and</p> 
+            <p class="y">
+                this text is underlined On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and  </p>
+               
+        
+        <p>This paragraph is not floated</p>
+       
+            
+        
+</body>
+    </html>
+
+    <!--
+        
+        positioning- Static(default), relative, absolute, fixed, sticky
+        
+        realtive- we use 
+        top:50px  to adjust elements relative to the previous position, current position.
+
+        Absolute-
+        Here the element first goes to the default position(position of the parent.) ie without any float/position and then shifts accordingly
+
+        fixed- Here the element remains fixed even if we scroll down the page.
+
+        Z-INDEX 
+    one with higher z index, it would be in the front-->

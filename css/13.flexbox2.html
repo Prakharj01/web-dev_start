@@ -1,0 +1,96 @@
+<html>
+
+<head><title>Flexbox Tutorial</title></head>
+<style>
+.container{
+    height:544px;
+    width:100%;
+    border:2px solid black;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items:center;
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items: stretch;
+    
+    }
+.item{
+    width:200px;
+    height:50px;
+    background-color:tomato;
+    border:2px solid green;
+    margin: 10px;
+    padding:3px;
+}
+#item-1{
+    align-self:flex-end center
+    
+}
+#item-2{
+   flex-basis:320px;
+}
+
+#item-3{
+    order:40;
+}
+
+</style>
+<body>
+<h1> This is flexbox Tutorial</h1>
+<div class="container">
+    <div class="item" id="item-1">First Box</div>
+    <div class="item" id="item-2">Second Box</div>
+    <div class="item" id="item-3">Third Box</div>
+   <!-- <div class="item" id="item-4">Fourth Box</div>
+    <div class="item" id="item-5">Fifth box</div>
+    <div class="item" id="item-6">Sixth box</div>
+    -->
+    </div>
+
+    
+</body>
+</html>
+
+<!-- To initialize a divison as a flex container
+display:flex 
+FLEXBOX CONTAINER PROPERTIES
+flex-direction:row;
+flex-direction:column;
+flex-direction:row-reverse;
+flex-direction:column-reverse;
+flex-direction: value overwrites each other. The one written in the bottom is considered
+
+flex-wrap:wrap reverse;
+
+flex-flow: flex direction flex-wrap;
+we can give both flex direction and wrap in flex-flow;
+
+HORIZONTAL ALIGNMENT
+justify-content:;      It adjusts the space between the flex items
+justify-content:center      It positions the boxes in the center.
+justify-content:space-between;  It gives equal spaces between the boxes only.
+justify-content:space-evenly;
+justify-content:space-around; Margins
+
+justify-content:space-evenly; It spaces even between the boxes as well as between the boxes and margin.
+
+VERTICAL ALIGNMENT
+align-items:center;
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items: stretch;   Even vertical spaces when boxes are wrapped around;
+
+FLEXBOX ITEMS PROPERTIES
+    order:          The bigger the order later it will appear in the container.
+    flexgrow:4;     It ddefines the speed with which the box width increases with increase in the browser width.
+
+    flex basis:160px;
+     when flex-direction is set to row, flex basis controls the width, if set to column, flex basis controls the height;
+
+    flex: flex grow:  flex grow,flex shrink,flex basis;
+
+    align-self:flex-start;
+    align-self:flex-end;
+    align-self:flex-center;
+-->

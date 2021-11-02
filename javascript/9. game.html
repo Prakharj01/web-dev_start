@@ -1,0 +1,27 @@
+<html>
+<head><title>
+</title><head>
+<style>
+</style>
+    <body>
+        <input type="text" id="inp" placeholder="You might get Lucky..!">
+       
+        <button id="number"> Enter a number </button>
+         <script type="text/javascript">
+        
+        var num="";
+        document.getElementById("number").onclick=function(){
+        num=document.getElementById("inp").value;
+        var random=(Math.floor(Math.random()*5));
+
+        if(num==random){
+            alert("wohoo you won ");
+        }
+        else{
+            alert("Haha you loser.The numeber was "+random);
+        }
+        }
+         
+        </script>
+    </body>
+</html>

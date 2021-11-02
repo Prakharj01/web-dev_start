@@ -1,0 +1,48 @@
+<html>
+<head><title>
+</title><head>
+<style>
+</style>
+    <body>
+        <html>
+<head><title>
+</title><head>
+    <body>
+        <p id="text">Hey Girls</p>
+<button id="mybutton">Click me to enlarge</button>
+<p id="secondParagraph">Javascript is ....</p>
+<button id="mybutton2">Click me to APPEND text</button>
+<p id="empty"> </p>
+
+<button id="create">Click me to create</button>
+<p id="empty"> </p>
+
+
+
+<p id="more">Some Text</p>
+
+<button id="last">Click me to style</button>
+
+        <script type="text/javascript">
+        document.getElementById("mybutton").onclick=function(){
+            document.getElementById("text").style.fontSize="50px";
+            document.getElementById("text").style.color="Red";
+        }        
+        document.getElementById("mybutton2").onclick=function(){
+            document.getElementById("secondParagraph").style.display="none";
+        }        
+
+        
+        document.getElementById("create").onclick=function(){
+            document.getElementById("empty").innerHTML="Hey i am learning";
+        }
+        document.getElementById("last").onclick=function(){
+            document.getElementById("more").style.color="Red";
+        } 
+     
+        </script>
+    </body>
+</html>
+
+    </body>
+</html>
